@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+	<meta name="viewport" 
+	content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<title>Bookmarker</title>
+
+	<!-- Bootstrap core CSS -->
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body onload="fetchBookmarks()" class="container my-4 bg-info">
+
+	<div class="jumbotron bg-light">
+		<div class="container">
+			<h2 class="display-4">Bookmark Your Favorite Websites</h2>
+			<form id="myForm">
+				
+				<div class="form-group">
+					<label>Site Name</label>
+					<input type="text" 
+					class="form-control" id="siteName" 
+					placeholder="Name of Site"
+					>
+				</div>
+
+				<div class="form-group">
+					<label>Site URL</label>
+					<input type="text" 
+					class="form-control" id="siteUrl" 
+					placeholder="Site URL"
+					>
+				</div>
+
+				<button type="submit" class="btn btn-primary">Submit</button>
+
+			</form>
+		</div>
+	</div>
+
+	<div class="container">
+		<div id="bookmarksResults"></div>
+	</div>
+
+	<footer class="container">
+		<p>&copy; Daniel Foutz 2019</p>
+	</footer>
+
+
+	<!-- ================================================== -->
+	<!-- Placed at the end of the document so the pages load faster -->
+	<!--JQuery-->
+	<script
+  src="https://code.jquery.com/jquery-3.3.1.js"
+  integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+	crossorigin="anonymous"></script>
+	<!--Bootstrap-->
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/main.js"></script>
+</body>
+</html>
